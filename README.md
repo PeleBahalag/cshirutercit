@@ -1,3 +1,3 @@
 # CshirutErcit
 
-https://pelebahalag.github.io/cshirutercit
+https://pelebahalag.github.io/cshirutercit/index.html
