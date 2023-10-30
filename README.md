@@ -1,4 +1,4 @@
 # CshirutErcit
 
-pelebahalag.github.io/cshirutercit/index.html
-pelebahalag.github.io/cshirutercit/index.html
+https://pelebahalag.github.io/cshirutercit/index.html
+https://pelebahalag.github.io/cshirutercit/index.html
