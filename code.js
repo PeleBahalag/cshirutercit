@@ -246,20 +246,29 @@ const EXER4_HTML = `
 `;
 
 const HATIKVA_LYRICS = [`כל`, `עוד`, `בלבב`, `פנימה`, `נפש`, `יהודי`, `הומיה`, `ולפאתי`, `מזרח`, `קדימה`, `עין`, `לציון`, `צופיה`,
- `עוד`, `לא`, `אבדה`, `תקותנו`, `התקוה`, `בת`, `שנות`, `אלפים`, `להיות`, `עם`, `חופשי`, `בארצנו`, `ארץ`, `ציון`, `וירושלים`];
+ `עוד`, `לא`, `אבדה`, `תקותנו`, `התקוה`, `בת`, `שנות`, `אלפים`, `להיות`, `עם`, `חפשי`, `בארצנו`, `ארץ`, `ציון`, `וירושלים`];
 
 let currentExer = 0;
 
 const FINISH_SCREEN = `
     <h1 class="titleText">כל הכבוד סיימתם את הלומדה!</h1>
     <p class="text finishText" id="text">אם אתם מרגישים לא מוכנים עדיין אתם מוזמנים לחזור על הלומדה כמה שתרצו.</p>
-    <button class="button" id="button">עוד פעם!</button>
+    <button class="button" id="button">הבא</button>
 `
 const SYMBOLS_HTML = `
     <div id="symbols">
-        <img id="gapaLogo" src="media\פלא.png" alt="סמל פלא" class="gapaLogo">
-        <img src="media\סמל סיירים ללא רקע.png" alt="סמל בהלג" class="shivtaLogo">
+        // <img id="gapaLogo" src="media/פלא.png" alt="סמל פלא" class="gapaLogo">
+        <img src="media/סמל סיירים ללא רקע.png" alt="סמל בהלג" class="shivtaLogo">
     </div>
+`;
+
+const LAST_PAGE = `
+    <div class="lastPage1">פה עבורכם לכל דבר- משרד חינוך בהל״ג</div>
+    <div class="lastPage2">קצינת חינוך בהל״ג- <br>
+    שחר מקוב <br>
+    054-3982638</div>
+    <img src="media/sroh3.svg" alt="שרוך אפור" class="sroh">
+    <button class="button" id="button">עוד פעם!</button>
 `;
 
 let restart = false;
@@ -267,6 +276,7 @@ let restart = false;
 window.addEventListener("load", () => {
     document.getElementById("start_button").style.bottom = `40%`;
     document.getElementById("start_button").addEventListener("click", start);
+    // document.getElementById("start_button").addEventListener("click", endPage);
 });
 
 const start = () => {
@@ -423,5 +433,11 @@ const finish = () => {
     document.getElementById("body").innerHTML += SYMBOLS_HTML;
     document.getElementById("content").innerHTML = FINISH_SCREEN;
     restart = true;
-    document.getElementById("button").addEventListener("click",start);
+    document.getElementById("button").addEventListener("click",endPage);
+    document.getElementById("gapaLogo").style.display = "none";
+}
+
+const endPage = () => {
+    document.getElementById("content").innerHTML = LAST_PAGE;
+    document.getElementById("button").addEventListener("click", start);
 }

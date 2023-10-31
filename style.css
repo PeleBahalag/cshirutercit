@@ -426,3 +426,30 @@ html {
     text-align: center;
     top: 48%;
 }
+
+.lastPage1 {
+    position: absolute;
+    top: 18%;
+    font-size: 4vmax;
+    padding: 5vmin;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-weight: bold;
+}
+
+.lastPage2 {
+    position: absolute;
+    top: 31%;
+    font-size: 4vmax;
+    padding: 5vmin;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-weight: bold;
+    margin-right: 11vw
+}
+
+.sroh {
+    margin-top: 98vw;
+    width: 70vw;
+    margin-right: 16vw;
+}
