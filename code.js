@@ -263,8 +263,8 @@ const SYMBOLS_HTML = `
 `;
 
 const LAST_PAGE = `
-    <div class="lastPage1">פה עבורכם לכל דבר- משרד חינוך בהל״ג</div>
-    <div class="lastPage2">קצינת חינוך בהל״ג- <br>
+    <div class="lastPage1">פה עבורכם לכל דבר- משרד חינוך בהל״ג❤️ </div>
+    <div class="lastPage2">ק. חינוך בהל״ג- <br>
     שחר מקוב <br>
     054-3982638</div>
     <img src="media/sroh3.svg" alt="שרוך אפור" class="sroh">

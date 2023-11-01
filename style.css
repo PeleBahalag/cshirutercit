@@ -440,16 +440,16 @@ html {
 .lastPage2 {
     position: absolute;
     top: 31%;
-    font-size: 4vmax;
+    font-size: 3.6vmax;
     padding: 5vmin;
     color: rgb(0, 0, 0);
     text-align: center;
     font-weight: bold;
-    margin-right: 11vw
+    margin-right: 19vw;
 }
 
 .sroh {
-    margin-top: 98vw;
-    width: 70vw;
-    margin-right: 16vw;
+    margin-top: 106vw;
+    width: 56vw;
+    margin-right: 24vw;
 }
